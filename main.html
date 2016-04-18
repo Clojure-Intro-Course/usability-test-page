@@ -1,25 +1,124 @@
 <!DOCTYPE html>
 <html>
-<body>
+	<head>
+		<meta charset="utf-8">
+  	<title>Document</title>
+  	<link rel="stylesheet" href="css/main.css">
+		<script src="js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.0/seedrandom.min.js"></script>
 
-<form action=<!--Some javascipt fn-->>
-Seed: <input type="Seed" name="Seed" value="12345678"><br>
-<input type="submit" value="Submit">
-</form>
+	</head>
 
-<h1>This is a test</h1>
-<div class="question" id="Racket #1 level 2">
-	<p>Racket ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
-<div class="question" id="Clojure #1 level 2">
-	<p>Clojure ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
-<div class="question" id="Racket #2 level -7">
-	<p>Racket ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
-<div class="question" id="Clojure #2 level -7">
-	<p>Clojure ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-</div>
+	<body>
+		<input type="text" name="seed value field" id="seed" value="Uninitalized Seed">
+		<button onclick="seedSubmit(seed)" name="seed submit button" type="button">Set Seed</button>
+		<button onclick="determineHideElems()" name="testing button" type="button">Test</button>
+		<p>Current seed:<p id="currentSeed">Uninitalized Seed</p></p>
+		<h1>This is a test</h1>
+		<!--Racket Question 1-1 -->
+		<div class="question" id="1-1 Racket">
+			<p>Racket LEVEL 1 QUESTION 1</p>
+		</div>
+		<!--Clojure Question 1-1 -->
+		<div class="question" id="1-1 Clojure">
+			<p>Clojure LEVEL 1 QUESTION 1</p>
+		</div>
+		<!--Racket Question 1-2 -->
+		<div class="question" id="1-2 Racket">
+			<p>Racket LEVEL 1 QUESTION 2</p>
+		</div>
+		<!--Clojure Question 1-2 -->
+		<div class="question" id="1-2 Clojure">
+			<p>Clojure LEVEL 1 QUESTION 2</p>
+		</div>
+		<!--Racket Question 1-3 -->
+		<div class="question" id="1-3 Racket">
+			<p>Racket LEVEL 1 QUESTION 2</p>
+		</div>
+		<!--Clojure Question 1-3 -->
+		<div class="question" id="1-3 Clojure">
+			<p>Clojure LEVEL 1 QUESTION 2</p>
+		</div>
+		<!--Racket Question 2-1 -->
+		<div class="question" id="2-1 Racket">
+			<p>Racket LEVEL 2 QUESTION 1</p>
+		</div>
+		<!--Clojure Question 2-1 -->
+		<div class="question" id="2-1 Clojure">
+			<p>Clojure LEVEL 2 QUESTION 1</p>
+		</div>
+		<!--Racket Question 2-2 -->
+		<div class="question" id="2-2 Racket">
+			<p>Racket LEVEL 2 QUESTION 2</p>
+		</div>
+		<!--Clojure Question 2-2 -->
+		<div class="question" id="2-2 Clojure">
+			<p>Clojure LEVEL 2 QUESTION 2</p>
+		</div>
+	</body>
 
-</body>
+	<script>
+
+	level1Qs = ["1-1", "1-2", "1-3"];
+	level2Qs = ["2-1", "2-2"];
+
+	window.onload = function(){
+		// Sets Math.random to an ARC4-based PRNG that is autoseeded using the
+    // current time, dom state, and other accumulated local entropy.
+    // The generated seed string is returned
+		var temprng = new Math.seedrandom();
+		//Generates a strong random seed, and sets the generator seed to that.
+		seed.value = temprng.int32();
+		seedSubmit();
+	}
+
+	function seedSubmit() {
+		currentSeed=seed.value
+		rng = new Math.seedrandom(seed.value);
+		console.log(rng());
+	}
+
+	function determineHideElems() {
+		console.log("Hello, cupcake!");
+		window.alert(parseInt(currentSeed));
+		alternateLanguages(shuffle(level1Qs));
+		alternateLanguages(shuffle(level2Qs));
+		console.log(level1Qs);
+		console.log(level2Qs);
+		Array.prototype.map(hideById(), level1Qs);
+		Array.prototype.map(hideById(), level2Qs);
+	}
+
+	function shuffle(arr) {
+	  var currentIndex = arr.length, temporaryValue, randomIndex;
+	  while (0 !== currentIndex) {
+	    randomIndex = Math.floor(rng() * currentIndex);
+	    currentIndex -= 1;
+	    temporaryValue = arr[currentIndex];
+	    arr[currentIndex] = arr[randomIndex];
+	    arr[randomIndex] = temporaryValue;
+	  }
+	  return arr;
+	}
+
+	function alternateLanguages(arr) {
+		for (i = 0; i < arr.length; i++) {
+			console.log(arr[i]);
+			if (i % 2 == 0) {
+				arr[i] = arr[i] + " Clojure"
+				console.log(arr[i]);
+			} else {
+				arr[i] = arr[i] + " Racket"
+				console.log(arr[i]);
+			}
+		}
+	}
+
+	function hideById(ele) {
+		console.log(ele);
+		document.getElementById(ele).style.visibility = "hidden";
+	}
+	</script>
+
 </html>
