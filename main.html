@@ -16,7 +16,9 @@
 		<button onclick="determineHideElems()" name="testing button" type="button">Test</button>
 		<p>Current seed:<p id="currentSeed">Uninitalized Seed</p></p>
 		<h1>This is a test</h1>
-		<div>
+		<button onclick="showRacket()" name="show racket button" type="button">Show</button>
+		<button onclick="hideRacket()" name="hide racket button" type="button">Hide</button>
+		<div id="Racket Questions" style.display="block">
 			<h2>Racket Questions</h2>
 			<!--Racket Question 0-1 -->
 			<div class="question" id="0-1 Racket">
@@ -51,7 +53,10 @@
 			</div>
 			<br>
 		</div>
-		<div>
+		<br>
+		<button onclick="showClojure()" name="show clojure button" type="button">Show</button>
+		<button onclick="hideClojure()" name="hide clojure button" type="button">Hide</button>
+		<div id="Clojure Questions" style.display="block">
 			<h2>Clojure Questions</h2>
 			<!--Clojure Question 0-1 -->
 			<div class="question" id="0-1 Clojure">
@@ -155,6 +160,22 @@
 	function hideById(ele) {
 		console.log(ele);
 		document.getElementById(ele).style.display = "none";
+	}
+
+	function showRacket() {
+		document.getElementById("Racket Questions").style.display = "block";
+	}
+
+	function hideRacket() {
+		document.getElementById("Racket Questions").style.display = "none";
+	}
+
+	function showClojure() {
+		document.getElementById("Clojure Questions").style.display = "block";
+	}
+
+	function hideClojure() {
+		document.getElementById("Clojure Questions").style.display = "none";
 	}
 	</script>
 
