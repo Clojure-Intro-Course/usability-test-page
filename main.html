@@ -103,12 +103,18 @@
 	function determineHideElems() {
 		console.log("Hello, cupcake!");
 		window.alert(parseInt(currentSeed));
+		alternateLanguages(shuffle(level0Qs));
 		alternateLanguages(shuffle(level1Qs));
 		alternateLanguages(shuffle(level2Qs));
+		alternateLanguages(shuffle(level3Qs));
+		console.log(level0Qs);
 		console.log(level1Qs);
 		console.log(level2Qs);
-		Array.prototype.map(hideById(), level1Qs);
-		Array.prototype.map(hideById(), level2Qs);
+		console.log(level3Qs);
+		level0Qs.map(hideById);
+		level1Qs.map(hideById);
+		level2Qs.map(hideById);
+		level3Qs.map(hideById);
 	}
 
 	function shuffle(arr) {
@@ -125,7 +131,7 @@
 
 	function alternateLanguages(arr) {
 		for (i = 0; i < arr.length; i++) {
-			console.log(arr[i]);
+			//console.log(arr[i]);
 			if (i % 2 == 0) {
 				arr[i] = arr[i] + " Clojure"
 				console.log(arr[i]);
@@ -138,8 +144,9 @@
 
 	function hideById(ele) {
 		console.log(ele);
-		document.getElementById(ele).style.visibility = "hidden";
+		document.getElementById(ele).style.display = "none";
 	}
 	</script>
+
 
 </html>
