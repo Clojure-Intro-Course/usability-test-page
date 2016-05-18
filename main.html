@@ -16,6 +16,23 @@
 		<button onclick="determineHideElems()" name="testing button" type="button">Test</button>
 		<p>Current seed:<p id="currentSeed">Uninitalized Seed</p></p>
 		<h1>This is a test</h1>
+		<!--Racket Question 0-1 -->
+		<div class="question" id="0-1 Racket">
+			<p>Racket LEVEL 0 QUESTION 1</p>
+		</div>
+		<!--Clojure Question 0-1 -->
+		<div class="question" id="0-1 Clojure">
+			<p>Clojure LEVEL 0 QUESTION 1</p>
+		</div>
+		<!--Racket Question 0-2 -->
+		<div class="question" id="0-2 Racket">
+			<p>Racket LEVEL 0 QUESTION 2</p>
+		</div>
+		<!--Clojure Question 0-2 -->
+		<div class="question" id="0-2 Clojure">
+			<p>Clojure LEVEL 0 QUESTION 2</p>
+		</div>
+		<br>
 		<!--Racket Question 1-1 -->
 		<div class="question" id="1-1 Racket">
 			<p>Racket LEVEL 1 QUESTION 1</p>
@@ -32,14 +49,7 @@
 		<div class="question" id="1-2 Clojure">
 			<p>Clojure LEVEL 1 QUESTION 2</p>
 		</div>
-		<!--Racket Question 1-3 -->
-		<div class="question" id="1-3 Racket">
-			<p>Racket LEVEL 1 QUESTION 2</p>
-		</div>
-		<!--Clojure Question 1-3 -->
-		<div class="question" id="1-3 Clojure">
-			<p>Clojure LEVEL 1 QUESTION 2</p>
-		</div>
+		<br>
 		<!--Racket Question 2-1 -->
 		<div class="question" id="2-1 Racket">
 			<p>Racket LEVEL 2 QUESTION 1</p>
@@ -56,12 +66,23 @@
 		<div class="question" id="2-2 Clojure">
 			<p>Clojure LEVEL 2 QUESTION 2</p>
 		</div>
+		<br>
+		<!--Racket Question 3-1 -->
+		<div class="question" id="3-1 Racket">
+			<p>Racket LEVEL 3 QUESTION 1</p>
+		</div>
+		<!--Clojure Question 3-1 -->
+		<div class="question" id="3-1 Clojure">
+			<p>Clojure LEVEL 3 QUESTION 1</p>
+		</div>
 	</body>
 
 	<script>
 
-	level1Qs = ["1-1", "1-2", "1-3"];
+	level0Qs = ["0-1", "0-2"];
+	level1Qs = ["1-1", "1-2"];
 	level2Qs = ["2-1", "2-2"];
+	level3Qs = ["3-1"];
 
 	window.onload = function(){
 		// Sets Math.random to an ARC4-based PRNG that is autoseeded using the
