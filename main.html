@@ -114,6 +114,10 @@
 				<input type="checkbox" onclick="doneWClojure3_2()" id="3-2 Clojure check" value="3-2-C done">Done
 			</div>
 		</div>
+
+	<!--Image from https://www.youtube.com/watch?v=6Ns4hfVOJ6Y under Creative Commons Attribution license (reuse allowed)-->
+		<div id="winner image" style.display="none"><img src="assets/winner.jpg" alt="chicken dinner sold seperately" style="width:1281px;height:720px;"></div>
+
 	</body>
 
 	<script>
@@ -133,6 +137,7 @@
 		seedSubmit();
 		hideClojure();
 		showRacket();
+		hideWinnerImage();
 	}
 
 	function seedSubmit() {
@@ -187,6 +192,14 @@
 	function hideById(ele) {
 		console.log(ele);
 		document.getElementById(ele).style.display = "none";
+	}
+
+	function showWinnerImage() {
+		document.getElementById("winner image").style.display = "inline";
+	}
+
+	function hideWinnerImage() {
+		document.getElementById("winner image").style.display = "none";
 	}
 
 	function showRacket() {
@@ -490,6 +503,7 @@
 		if (clojureCounter == 4) {
 			hideRacket();
 			hideClojure();
+			showWinnerImage();
 		}
 	}
 	function doneWClojure0_2() {
@@ -515,6 +529,7 @@
 		if (clojureCounter == 4) {
 			hideRacket();
 			hideClojure();
+			showWinnerImage();
 		}
 	}
 
@@ -541,6 +556,7 @@
 		if (clojureCounter == 4) {
 			hideRacket();
 			hideClojure();
+			showWinnerImage();
 		}
 	}
 	function doneWClojure1_2() {
@@ -566,6 +582,7 @@
 		if (clojureCounter == 4) {
 			hideRacket();
 			hideClojure();
+			showWinnerImage();
 		}
 	}
 
@@ -592,6 +609,7 @@
 		if (clojureCounter == 4) {
 			hideRacket();
 			hideClojure();
+			showWinnerImage();
 		}
 	}
 	function doneWClojure2_2() {
@@ -617,6 +635,7 @@
 		if (clojureCounter == 4) {
 			hideRacket();
 			hideClojure();
+			showWinnerImage();
 		}
 	}
 
@@ -643,6 +662,7 @@
 		if (clojureCounter == 4) {
 			hideRacket();
 			hideClojure();
+			showWinnerImage();
 		}
 	}
 	function doneWClojure3_2() {
@@ -668,6 +688,7 @@
 		if (clojureCounter == 4) {
 			hideRacket();
 			hideClojure();
+			showWinnerImage();
 		}
 	}
 
