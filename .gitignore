@@ -3,3 +3,5 @@
 2_*.html
 3_*.html
 questions
+*racket.html
+*clojure.html
