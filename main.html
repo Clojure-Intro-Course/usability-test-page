@@ -16,86 +16,102 @@
 		<button onclick="determineHideElems()" name="testing button" type="button">Test</button>
 		<p>Current seed:<p id="currentSeed">Uninitalized Seed</p></p>
 		<h1>This is a test</h1>
-		<button onclick="showRacket()" name="show racket button" type="button">Show</button>
-		<button onclick="hideRacket()" name="hide racket button" type="button">Hide</button>
-		<div id="Racket Questions" style.display="block">
+		<div id="show racket button"><button onclick="showRacket()" name="show racket button" type="button">Show</button></div>
+		<div id="hide racket button"><button onclick="hideRacket()" name="hide racket button" type="button">Hide</button></div>
+		<div id="Racket Questions">
 			<h2>Racket Questions</h2>
 			<!--Racket Question 0-1 -->
 			<div class="question" id="0-1 Racket">
 				<a href="questions/0_1_racket.html" target="_blank">Racket LEVEL 0 QUESTION 1</a>
+				<input type="checkbox" onclick="doneWRacket0_1()" id="0-1 Racket check" value="0-1-R done">Done
 			</div>
 			<!--Racket Question 0-2 -->
 			<div class="question" id="0-2 Racket">
 				<a href="questions/0_2_racket.html" target="_blank">Racket LEVEL 0 QUESTION 2</a>
+				<input type="checkbox" onclick="doneWRacket0_2()" id="0-2 Racket check" value="0-2-R done">Done
 			</div>
 			<br>
 			<!--Racket Question 1-1 -->
 			<div class="question" id="1-1 Racket">
 				<a href="questions/1_1_racket.html" target="_blank">Racket LEVEL 1 QUESTION 1</a>
+				<input type="checkbox" onclick="doneWRacket1_1()" id="1-1 Racket check" value="1-1-R done">Done
 			</div>
 			<!--Racket Question 1-2 -->
 			<div class="question" id="1-2 Racket">
 				<a href="questions/1_2_racket.html" target="_blank">Racket LEVEL 1 QUESTION 2</a>
+				<input type="checkbox" onclick="doneWRacket1_2()" id="1-2 Racket check" value="1-2-R done">Done
 			</div>
 			<br>
 			<!--Racket Question 2-1 -->
 			<div class="question" id="2-1 Racket">
 				<a href="questions/2_1_racket.html" target="_blank">Racket LEVEL 2 QUESTION 1</a>
+				<input type="checkbox" onclick="doneWRacket2_1()" id="2-1 Racket check" value="2-1-R done">Done
 			</div>
 			<!--Racket Question 2-2 -->
 			<div class="question" id="2-2 Racket">
 				<a href="questions/2_2_racket.html" target="_blank">Racket LEVEL 2 QUESTION 2</a>
+				<input type="checkbox" onclick="doneWRacket2_2()" id="2-2 Racket check" value="2-2-R done">Done
 			</div>
 			<br>
 			<!--Racket Question 3-1 -->
 			<div class="question" id="3-1 Racket">
 				<a href="questions/3_1_racket.html" target="_blank">Racket LEVEL 3 QUESTION 1</a>
+				<input type="checkbox" onclick="doneWRacket3_1()" id="3-1 Racket check" value="3-1-R done">Done
 			</div>
 			<!--Racket Question 3-2 -->
 			<div class="question" id="3-2 Racket">
 				<a href="questions/3_2_racket.html" target="_blank">Racket LEVEL 3 QUESTION 2</a>
+				<input type="checkbox" onchange="doneWRacket3_2()" id="3-2 Racket check" value="3-2-R done">Done
 			</div>
 			<br>
 		</div>
 		<br>
-		<button onclick="showClojure()" name="show clojure button" type="button">Show</button>
-		<button onclick="hideClojure()" name="hide clojure button" type="button">Hide</button>
-		<div id="Clojure Questions" style.display="block">
+		<div id="show clojure button"><button onclick="showClojure()" name="show clojure button" type="button">Show</button></div>
+		<div id="hide clojure button"><button onclick="hideClojure()" name="hide clojure button" type="button">Hide</button></div>
+		<div id="Clojure Questions">
 			<h2>Clojure Questions</h2>
 			<!--Clojure Question 0-1 -->
 			<div class="question" id="0-1 Clojure">
 		  	<a href="questions/0_1_clojure.html" target="_blank">Clojure LEVEL 0 QUESTION 1</a>
+				<input type="checkbox" onclick="doneWClojure0_1()" id="0-1 Clojure check" value="0-1-C done">Done
 			</div>
 			<!--Clojure Question 0-2 -->
 			<div class="question" id="0-2 Clojure">
 			  <a href="questions/0_2_clojure.html" target="_blank">Clojure LEVEL 0 QUESTION 2</a>
+				<input type="checkbox" onclick="doneWClojure0_2()" id="0-2 Clojure check" value="0-2-C done">Done
 			</div>
 			<br>
 			<!--Clojure Question 1-1 -->
 			<div class="question" id="1-1 Clojure">
 		  	<a href="questions/1_1_clojure.html" target="_blank">Clojure LEVEL 1 QUESTION 1</a>
+				<input type="checkbox" onclick="doneWClojure1_1()" id="1-1 Clojure check" value="1-1-C done">Done
 			</div>
 			<!--Clojure Question 1-2 -->
 			<div class="question" id="1-2 Clojure">
 		  	<a href="questions/1_2_clojure.html" target="_blank">Clojure LEVEL 1 QUESTION 2</a>
+				<input type="checkbox" onclick="doneWClojure1_2()" id="1-2 Clojure check" value="1-2-C done">Done
 			</div>
 			<br>
 			<!--Clojure Question 2-1 -->
 			<div class="question" id="2-1 Clojure">
 		  	<a href="questions/2_1_clojure.html" target="_blank">Clojure LEVEL 2 QUESTION 1</a>
+				<input type="checkbox" onclick="doneWClojure2_1()" id="2-1 Clojure check" value="2-1-C done">Done
 			</div>
 			<!--Clojure Question 2-2 -->
 			<div class="question" id="2-2 Clojure">
 		  	<a href="questions/2_2_clojure.html" target="_blank">Clojure LEVEL 2 QUESTION 2</a>
+				<input type="checkbox" onclick="doneWClojure2_2()" id="2-2 Clojure check" value="2-2-C done">Done
 			</div>
 			<br>
 			<!--Clojure Question 3-1 -->
 			<div class="question" id="3-1 Clojure">
 		  	<a href="questions/3_1_clojure.html" target="_blank">Clojure LEVEL 3 QUESTION 1</a>
+				<input type="checkbox" onclick="doneWClojure3_1()" id="3-1 Clojure check" value="3-1-C done">Done
 			</div>
 			<!--Clojure Question 3-2 -->
 			<div class="question" id="3-2 Clojure">
 		  	<a href="questions/3_2_clojure.html" target="_blank">Clojure LEVEL 3 QUESTION 2</a>
+				<input type="checkbox" onclick="doneWClojure3_2()" id="3-2 Clojure check" value="3-2-C done">Done
 			</div>
 		</div>
 	</body>
@@ -105,7 +121,7 @@
 	level0Qs = ["0-1", "0-2"];
 	level1Qs = ["1-1", "1-2"];
 	level2Qs = ["2-1", "2-2"];
-	level3Qs = ["3-1"];
+	level3Qs = ["3-1", "3-2"];
 
 	window.onload = function(){
 		// Sets Math.random to an ARC4-based PRNG that is autoseeded using the
@@ -115,6 +131,8 @@
 		//Generates a strong random seed, and sets the generator seed to that.
 		seed.value = temprng.int32();
 		seedSubmit();
+		hideClojure();
+		showRacket();
 	}
 
 	function seedSubmit() {
@@ -138,6 +156,7 @@
 		level1Qs.map(hideById);
 		level2Qs.map(hideById);
 		level3Qs.map(hideById);
+		hideClojure();
 	}
 
 	function shuffle(arr) {
@@ -172,19 +191,487 @@
 
 	function showRacket() {
 		document.getElementById("Racket Questions").style.display = "block";
+		document.getElementById("hide racket button").style.display = "block";
+		document.getElementById("show racket button").style.display = "none";
 	}
 
 	function hideRacket() {
 		document.getElementById("Racket Questions").style.display = "none";
+		document.getElementById("show racket button").style.display = "block";
+		document.getElementById("hide racket button").style.display = "none";
 	}
 
 	function showClojure() {
 		document.getElementById("Clojure Questions").style.display = "block";
+		document.getElementById("hide clojure button").style.display = "block";
+		document.getElementById("show clojure button").style.display = "none";
 	}
 
 	function hideClojure() {
 		document.getElementById("Clojure Questions").style.display = "none";
+		document.getElementById("show clojure button").style.display = "block";
+		document.getElementById("hide clojure button").style.display = "none";
 	}
+
+	var racket0Counter = 0;
+	var racket0_1Counter = 0;
+	var racket0_2Counter = 0;
+
+	var racket1Counter = 0;
+	var racket1_1Counter = 0;
+	var racket1_2Counter = 0;
+
+	var racket2Counter = 0;
+	var racket2_1Counter = 0;
+	var racket2_2Counter = 0;
+
+	var racket3Counter = 0;
+	var racket3_1Counter = 0;
+	var racket3_2Counter = 0;
+
+	var racketCounter = 0;
+
+	function updateRacketCounter() {
+		racketCounter = racket0Counter +
+										racket1Counter +
+										racket2Counter +
+										racket3Counter;
+	}
+
+	function doneWRacket0_1() {
+		if ((racket0_1Counter == 1) && (racket0_2Counter == 1)) {
+			racket0Counter = 1;
+		}
+		if ((racket0_1Counter == 0) && (racket0_2Counter == 1)) {
+			racket0Counter = 1;
+		}
+		if ((racket0_1Counter == 1) && (racket0_2Counter == 0)) {
+			racket0Counter = 0;
+		}
+		if ((racket0_1Counter == 0) && (racket0_2Counter == 0)) {
+			racket0Counter = 1;
+		}
+		if (racket0_1Counter == 1) {
+			racket0_1Counter = 0;
+		}
+		else if (racket0_1Counter == 0) {
+			racket0_1Counter = 1;
+		}
+		updateRacketCounter();
+		if (racketCounter == 4) {
+			hideRacket();
+			showClojure();
+		}
+	}
+	function doneWRacket0_2() {
+		if ((racket0_1Counter == 1) && (racket0_2Counter == 1)) {
+			racket0Counter = 1;
+		}
+		if ((racket0_1Counter == 0) && (racket0_2Counter == 1)) {
+			racket0Counter = 0;
+		}
+		if ((racket0_1Counter == 1) && (racket0_2Counter == 0)) {
+			racket0Counter = 1;
+		}
+		if ((racket0_1Counter == 0) && (racket0_2Counter == 0)) {
+			racket0Counter = 1;
+		}
+		if (racket0_2Counter == 1) {
+			racket0_2Counter = 0;
+		}
+		else if (racket0_2Counter == 0) {
+			racket0_2Counter = 1;
+		}
+		updateRacketCounter();
+		if (racketCounter == 4) {
+			hideRacket();
+			showClojure();
+		}
+	}
+
+	function doneWRacket1_1() {
+		if ((racket1_1Counter == 1) && (racket1_2Counter == 1)) {
+			racket1Counter = 1;
+		}
+		if ((racket1_1Counter == 0) && (racket1_2Counter == 1)) {
+			racket1Counter = 1;
+		}
+		if ((racket1_1Counter == 1) && (racket1_2Counter == 0)) {
+			racket1Counter = 0;
+		}
+		if ((racket1_1Counter == 0) && (racket1_2Counter == 0)) {
+			racket1Counter = 1;
+		}
+		if (racket1_1Counter == 1) {
+			racket1_1Counter = 0;
+		}
+		else if (racket1_1Counter == 0) {
+			racket1_1Counter = 1;
+		}
+		updateRacketCounter();
+		if (racketCounter == 4) {
+			hideRacket();
+			showClojure();
+		}
+	}
+	function doneWRacket1_2() {
+		if ((racket1_1Counter == 1) && (racket1_2Counter == 1)) {
+			racket1Counter = 1;
+		}
+		if ((racket1_1Counter == 0) && (racket1_2Counter == 1)) {
+			racket1Counter = 0;
+		}
+		if ((racket1_1Counter == 1) && (racket1_2Counter == 0)) {
+			racket1Counter = 1;
+		}
+		if ((racket1_1Counter == 0) && (racket1_2Counter == 0)) {
+			racket1Counter = 1;
+		}
+		if (racket1_2Counter == 1) {
+			racket1_2Counter = 0;
+		}
+		else if (racket1_2Counter == 0) {
+			racket1_2Counter = 1;
+		}
+		updateRacketCounter();
+		if (racketCounter == 4) {
+			hideRacket();
+			showClojure();
+		}
+	}
+
+	function doneWRacket2_1() {
+		if ((racket2_1Counter == 1) && (racket2_2Counter == 1)) {
+			racket2Counter = 1;
+		}
+		if ((racket2_1Counter == 0) && (racket2_2Counter == 1)) {
+			racket2Counter = 1;
+		}
+		if ((racket2_1Counter == 1) && (racket2_2Counter == 0)) {
+			racket2Counter = 0;
+		}
+		if ((racket2_1Counter == 0) && (racket2_2Counter == 0)) {
+			racket2Counter = 1;
+		}
+		if (racket2_1Counter == 1) {
+			racket2_1Counter = 0;
+		}
+		else if (racket2_1Counter == 0) {
+			racket2_1Counter = 1;
+		}
+		updateRacketCounter();
+		if (racketCounter == 4) {
+			hideRacket();
+			showClojure();
+		}
+	}
+	function doneWRacket2_2() {
+		if ((racket2_1Counter == 1) && (racket2_2Counter == 1)) {
+			racket2Counter = 1;
+		}
+		if ((racket2_1Counter == 0) && (racket2_2Counter == 1)) {
+			racket2Counter = 0;
+		}
+		if ((racket2_1Counter == 1) && (racket2_2Counter == 0)) {
+			racket2Counter = 1;
+		}
+		if ((racket2_1Counter == 0) && (racket2_2Counter == 0)) {
+			racket2Counter = 1;
+		}
+		if (racket2_2Counter == 1) {
+			racket2_2Counter = 0;
+		}
+		else if (racket2_2Counter == 0) {
+			racket2_2Counter = 1;
+		}
+		updateRacketCounter();
+		if (racketCounter == 4) {
+			hideRacket();
+			showClojure();
+		}
+	}
+
+	function doneWRacket3_1() {
+		if ((racket3_1Counter == 1) && (racket3_2Counter == 1)) {
+			racket3Counter = 1;
+		}
+		if ((racket3_1Counter == 0) && (racket3_2Counter == 1)) {
+			racket3Counter = 1;
+		}
+		if ((racket3_1Counter == 1) && (racket3_2Counter == 0)) {
+			racket3Counter = 0;
+		}
+		if ((racket3_1Counter == 0) && (racket3_2Counter == 0)) {
+			racket3Counter = 1;
+		}
+		if (racket3_1Counter == 1) {
+			racket3_1Counter = 0;
+		}
+		else if (racket3_1Counter == 0) {
+			racket3_1Counter = 1;
+		}
+		updateRacketCounter();
+		if (racketCounter == 4) {
+			hideRacket();
+			showClojure();
+		}
+	}
+	function doneWRacket3_2() {
+		if ((racket3_1Counter == 1) && (racket3_2Counter == 1)) {
+			racket3Counter = 1;
+		}
+		if ((racket3_1Counter == 0) && (racket3_2Counter == 1)) {
+			racket3Counter = 0;
+		}
+		if ((racket3_1Counter == 1) && (racket3_2Counter == 0)) {
+			racket3Counter = 1;
+		}
+		if ((racket3_1Counter == 0) && (racket3_2Counter == 0)) {
+			racket3Counter = 1;
+		}
+		if (racket3_2Counter == 1) {
+			racket3_2Counter = 0;
+		}
+		else if (racket3_2Counter == 0) {
+			racket3_2Counter = 1;
+		}
+		updateRacketCounter();
+		if (racketCounter == 4) {
+			hideRacket();
+			showClojure();
+		}
+	}
+
+	var clojure0Counter = 0;
+	var clojure0_1Counter = 0;
+	var clojure0_2Counter = 0;
+
+	var clojure1Counter = 0;
+	var clojure1_1Counter = 0;
+	var clojure1_2Counter = 0;
+
+	var clojure2Counter = 0;
+	var clojure2_1Counter = 0;
+	var clojure2_2Counter = 0;
+
+	var clojure3Counter = 0;
+	var clojure3_1Counter = 0;
+	var clojure3_2Counter = 0;
+
+	var clojureCounter = 0;
+
+	function updateClojureCounter() {
+		clojureCounter = clojure0Counter +
+										clojure1Counter +
+										clojure2Counter +
+										clojure3Counter;
+	}
+
+	function doneWClojure0_1() {
+		if ((clojure0_1Counter == 1) && (clojure0_2Counter == 1)) {
+			clojure0Counter = 1;
+		}
+		if ((clojure0_1Counter == 0) && (clojure0_2Counter == 1)) {
+			clojure0Counter = 1;
+		}
+		if ((clojure0_1Counter == 1) && (clojure0_2Counter == 0)) {
+			clojure0Counter = 0;
+		}
+		if ((clojure0_1Counter == 0) && (clojure0_2Counter == 0)) {
+			clojure0Counter = 1;
+		}
+		if (clojure0_1Counter == 1) {
+			clojure0_1Counter = 0;
+		}
+		else if (clojure0_1Counter == 0) {
+			clojure0_1Counter = 1;
+		}
+		updateClojureCounter();
+		if (clojureCounter == 4) {
+			hideRacket();
+			hideClojure();
+		}
+	}
+	function doneWClojure0_2() {
+		if ((clojure0_1Counter == 1) && (clojure0_2Counter == 1)) {
+			clojure0Counter = 1;
+		}
+		if ((clojure0_1Counter == 0) && (clojure0_2Counter == 1)) {
+			clojure0Counter = 0;
+		}
+		if ((clojure0_1Counter == 1) && (clojure0_2Counter == 0)) {
+			clojure0Counter = 1;
+		}
+		if ((clojure0_1Counter == 0) && (clojure0_2Counter == 0)) {
+			clojure0Counter = 1;
+		}
+		if (clojure0_2Counter == 1) {
+			clojure0_2Counter = 0;
+		}
+		else if (clojure0_2Counter == 0) {
+			clojure0_2Counter = 1;
+		}
+		updateClojureCounter();
+		if (clojureCounter == 4) {
+			hideRacket();
+			hideClojure();
+		}
+	}
+
+	function doneWClojure1_1() {
+		if ((clojure1_1Counter == 1) && (clojure1_2Counter == 1)) {
+			clojure1Counter = 1;
+		}
+		if ((clojure1_1Counter == 0) && (clojure1_2Counter == 1)) {
+			clojure1Counter = 1;
+		}
+		if ((clojure1_1Counter == 1) && (clojure1_2Counter == 0)) {
+			clojure1Counter = 0;
+		}
+		if ((clojure1_1Counter == 0) && (clojure1_2Counter == 0)) {
+			clojure1Counter = 1;
+		}
+		if (clojure1_1Counter == 1) {
+			clojure1_1Counter = 0;
+		}
+		else if (clojure1_1Counter == 0) {
+			clojure1_1Counter = 1;
+		}
+		updateClojureCounter();
+		if (clojureCounter == 4) {
+			hideRacket();
+			hideClojure();
+		}
+	}
+	function doneWClojure1_2() {
+		if ((clojure1_1Counter == 1) && (clojure1_2Counter == 1)) {
+			clojure1Counter = 1;
+		}
+		if ((clojure1_1Counter == 0) && (clojure1_2Counter == 1)) {
+			clojure1Counter = 0;
+		}
+		if ((clojure1_1Counter == 1) && (clojure1_2Counter == 0)) {
+			clojure1Counter = 1;
+		}
+		if ((clojure1_1Counter == 0) && (clojure1_2Counter == 0)) {
+			clojure1Counter = 1;
+		}
+		if (clojure1_2Counter == 1) {
+			clojure1_2Counter = 0;
+		}
+		else if (clojure1_2Counter == 0) {
+			clojure1_2Counter = 1;
+		}
+		updateClojureCounter();
+		if (clojureCounter == 4) {
+			hideRacket();
+			hideClojure();
+		}
+	}
+
+	function doneWClojure2_1() {
+		if ((clojure2_1Counter == 1) && (clojure2_2Counter == 1)) {
+			clojure2Counter = 1;
+		}
+		if ((clojure2_1Counter == 0) && (clojure2_2Counter == 1)) {
+			clojure2Counter = 1;
+		}
+		if ((clojure2_1Counter == 1) && (clojure2_2Counter == 0)) {
+			clojure2Counter = 0;
+		}
+		if ((clojure2_1Counter == 0) && (clojure2_2Counter == 0)) {
+			clojure2Counter = 1;
+		}
+		if (clojure2_1Counter == 1) {
+			clojure2_1Counter = 0;
+		}
+		else if (clojure2_1Counter == 0) {
+			clojure2_1Counter = 1;
+		}
+		updateClojureCounter();
+		if (clojureCounter == 4) {
+			hideRacket();
+			hideClojure();
+		}
+	}
+	function doneWClojure2_2() {
+		if ((clojure2_1Counter == 1) && (clojure2_2Counter == 1)) {
+			clojure2Counter = 1;
+		}
+		if ((clojure2_1Counter == 0) && (clojure2_2Counter == 1)) {
+			clojure2Counter = 0;
+		}
+		if ((clojure2_1Counter == 1) && (clojure2_2Counter == 0)) {
+			clojure2Counter = 1;
+		}
+		if ((clojure2_1Counter == 0) && (clojure2_2Counter == 0)) {
+			clojure2Counter = 1;
+		}
+		if (clojure2_2Counter == 1) {
+			clojure2_2Counter = 0;
+		}
+		else if (clojure2_2Counter == 0) {
+			clojure2_2Counter = 1;
+		}
+		updateClojureCounter();
+		if (clojureCounter == 4) {
+			hideRacket();
+			hideClojure();
+		}
+	}
+
+	function doneWClojure3_1() {
+		if ((clojure3_1Counter == 1) && (clojure3_2Counter == 1)) {
+			clojure3Counter = 1;
+		}
+		if ((clojure3_1Counter == 0) && (clojure3_2Counter == 1)) {
+			clojure3Counter = 1;
+		}
+		if ((clojure3_1Counter == 1) && (clojure3_2Counter == 0)) {
+			clojure3Counter = 0;
+		}
+		if ((clojure3_1Counter == 0) && (clojure3_2Counter == 0)) {
+			clojure3Counter = 1;
+		}
+		if (clojure3_1Counter == 1) {
+			clojure3_1Counter = 0;
+		}
+		else if (clojure3_1Counter == 0) {
+			clojure3_1Counter = 1;
+		}
+		updateClojureCounter();
+		if (clojureCounter == 4) {
+			hideRacket();
+			hideClojure();
+		}
+	}
+	function doneWClojure3_2() {
+		if ((clojure3_1Counter == 1) && (clojure3_2Counter == 1)) {
+			clojure3Counter = 1;
+		}
+		if ((clojure3_1Counter == 0) && (clojure3_2Counter == 1)) {
+			clojure3Counter = 0;
+		}
+		if ((clojure3_1Counter == 1) && (clojure3_2Counter == 0)) {
+			clojure3Counter = 1;
+		}
+		if ((clojure3_1Counter == 0) && (clojure3_2Counter == 0)) {
+			clojure3Counter = 1;
+		}
+		if (clojure3_2Counter == 1) {
+			clojure3_2Counter = 0;
+		}
+		else if (clojure3_2Counter == 0) {
+			clojure3_2Counter = 1;
+		}
+		updateClojureCounter();
+		if (clojureCounter == 4) {
+			hideRacket();
+			hideClojure();
+		}
+	}
+
+
 	</script>
 
 
