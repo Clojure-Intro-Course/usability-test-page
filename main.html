@@ -19,6 +19,9 @@
 		<div id="show racket button"><button onclick="showRacket()" name="show racket button" type="button">Show Racket Questions</button></div>
 		<div id="hide racket button"><button onclick="hideRacket()" name="hide racket button" type="button">Hide Racket Questions</button></div>
 		<div id="Racket Questions">
+			<br>
+			<a href="https://github.com/Clojure-Intro-Course/UsabilityStudy/blob/master/Racket.md" target="_blank">Racket Refresher</a>
+
 			<h2>Racket Questions</h2>
 
 			<!--Racket Question 0-1 -->
@@ -98,12 +101,18 @@
 				<input type="checkbox" onchange="doneWRacket3_2()" id="3-2 Racket check" value="3-2-R done">Done
 			</div>
 			<br>
+
+			<div id="move on to clojure button" show.display="none"><button onclick="showClojure();hideRacket()" name="move on to clojure button" type="button">Click here to move on to Clojure Questions</button></div>
+
 		</div>
 		<br>
 		<div id="show clojure button"><button onclick="showClojure()" name="show clojure button" type="button">Show Clojure Questions</button></div>
 		<div id="hide clojure button"><button onclick="hideClojure()" name="hide clojure button" type="button">Hide Clojure Questions</button></div>
 		<div id="Clojure Questions">
+			<br>
+			<a href="https://github.com/Clojure-Intro-Course/UsabilityStudy/blob/master/Clojure.md" target="_blank">Clojure Introduction</a>
 			<h2>Clojure Questions</h2>
+
 			<!--Clojure Question 0-1 -->
 			<div class="question" id="0-1 Clojure">
 		  	<a href="questions/0_1_clojure.html" target="_blank">Clojure LEVEL 0 QUESTION 1</a>
@@ -178,6 +187,13 @@
 		  	<a href="questions/3_2_clojure.html" target="_blank">Clojure LEVEL 3 QUESTION 2</a>
 				<input type="checkbox" onclick="doneWClojure3_2()" id="3-2 Clojure check" value="3-2-C done">Done
 			</div>
+			<br>
+
+			<div id="finished button" show.display="none">
+				<button onclick="hideClojure();hideRacket();showWinnerImage()" name="finished button" type="button">Click here when finished with Clojure Questions</button>
+			</div>
+
+			<br>
 		</div>
 
 	<!--Image from https://www.youtube.com/watch?v=6Ns4hfVOJ6Y under Creative Commons Attribution license (reuse allowed)-->
@@ -203,6 +219,8 @@
 		hideClojure();
 		hideRacket();
 		hideWinnerImage();
+		hideMoveOnToClojure();
+		hideFinished();
 	}
 
 	function seedSubmit() {
@@ -295,6 +313,22 @@
 		document.getElementById("hide clojure button").style.display = "none";
 	}
 
+	function hideMoveOnToClojure() {
+		document.getElementById("move on to clojure button").style.display = "none";
+	}
+
+	function showMoveOnToClojure() {
+		document.getElementById("move on to clojure button").style.display = "block";
+	}
+
+	function hideFinished() {
+		document.getElementById("finished button").style.display = "none";
+	}
+
+	function showFinished() {
+		document.getElementById("finished button").style.display = "block";
+	}
+
 	var racket0Counter = 0;
 	var racket0_1Counter = 0;
 	var racket0_2Counter = 0;
@@ -325,8 +359,7 @@
 										racket2Counter +
 										racket3Counter;
 		if (racketCounter == 7) {
-			hideRacket();
-			showClojure();
+			showMoveOnToClojure();
 		}
 	}
 
@@ -671,8 +704,7 @@
 										clojure2Counter +
 										clojure3Counter;
 		if (clojureCounter == 7) {
-			hideClojure();
-
+			showFinished();
 		}
 	}
 
