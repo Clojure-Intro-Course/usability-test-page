@@ -1,9 +1,16 @@
-#page {
+#centerpanel {
   width: 85%;
+  height: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: auto;
-  margin-bottom: auto;
+  background-color: #ffffff
+}
+
+#page {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -17,6 +24,13 @@ h1 {
 }
 
 body {
-  background-image: url(assets/Clojure-icon.png);
+  background-image: url("Clojure-icon.png");
 }
 /* Image from https://commons.wikimedia.org/wiki/File:Clojure-icon.png and is in the public domain */
+
+img {
+  width: 100%;
+}
+
+p {
+}
