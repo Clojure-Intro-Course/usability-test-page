@@ -216,7 +216,7 @@
 			<br>
 		</div>
 
-	<!--Image from https://www.youtube.com/watch?v=6Ns4hfVOJ6Y under Creative Commons Attribution license (reuse allowed)-->
+		<!--Image from https://www.youtube.com/watch?v=6Ns4hfVOJ6Y under Creative Commons Attribution license (reuse allowed)-->
 		<div id="winner image" style.display="none">
 			<br>
 			<img src="assets/winner.jpg" alt="chicken dinner sold seperately" style="width:1281px;height:720px;"></div>
@@ -302,6 +302,7 @@
 		showRacket();
 	}
 
+
 	function showWinnerImage() {
 		document.getElementById("winner image").style.display = "inline";
 		console.log("game over, man. game over.")
@@ -310,6 +311,7 @@
 	function hideWinnerImage() {
 		document.getElementById("winner image").style.display = "none";
 	}
+
 
 	function showRacket() {
 		document.getElementById("Racket Questions").style.display = "block";
@@ -335,6 +337,7 @@
 		document.getElementById("hide clojure button").style.display = "none";
 	}
 
+
 	function hideMoveOnToClojure() {
 		document.getElementById("move on to clojure button").style.display = "none";
 	}
@@ -343,6 +346,7 @@
 		document.getElementById("move on to clojure button").style.display = "block";
 	}
 
+
 	function hideFinished() {
 		document.getElementById("finished button").style.display = "none";
 	}
@@ -350,6 +354,7 @@
 	function showFinished() {
 		document.getElementById("finished button").style.display = "block";
 	}
+
 
 	var racket0Counter = 0;
 	var racket0_1Counter = 0;
@@ -376,6 +381,7 @@
 	var racket3_4Counter = 0;
 
 	var racketCounter = 0;
+
 
 	function updateRacketCounter() {
 		racketCounter = racket0Counter +
@@ -479,6 +485,7 @@
 		updateRacketCounter();
 	}
 
+
 	function doneWRacket1_1() {
 		if (racket1_1Counter == 1){
 			if ((racket1_2Counter ==0) || (racket1_3Counter ==0) || (racket1_4Counter ==0)) {
@@ -570,6 +577,7 @@
 		}
 		updateRacketCounter();
 	}
+
 
 	function doneWRacket2_1() {
 		if (racket2_1Counter == 1){
@@ -756,6 +764,7 @@
 		updateRacketCounter();
 	}
 
+
 	var clojure0Counter = 0;
 	var clojure0_1Counter = 0;
 	var clojure0_2Counter = 0;
@@ -781,6 +790,7 @@
 	var clojure3_4Counter = 0;
 
 	var clojureCounter = 0;
+
 
 	function updateClojureCounter() {
 		clojureCounter = clojure0Counter +
@@ -884,6 +894,7 @@
 		updateClojureCounter();
 	}
 
+
 	function doneWClojure1_1() {
 		if (clojure1_1Counter == 1){
 			if ((clojure1_2Counter ==0) || (clojure1_3Counter ==0) || (clojure1_4Counter ==0)) {
@@ -975,6 +986,7 @@
 		}
 		updateClojureCounter();
 	}
+
 
 	function doneWClojure2_1() {
 		if (clojure2_1Counter == 1){
