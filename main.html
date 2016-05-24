@@ -11,11 +11,15 @@
 	</head>
 
 	<body>
+		<div id="page">
 		<input type="text" name="seed value field" id="seed" value="Uninitalized Seed">
 		<button onclick="seedSubmit(seed)" name="seed submit button" type="button">Set Seed</button>
 		<button onclick="determineHideElems()" name="testing button" type="button">Begin Test</button>
 		<p>Current seed:</p><p id="currentSeed">Uninitalized Seed</p>
 		<h1>Welcome!</h1>
+		<hr>
+		<br>
+		<div id=questions>
 		<div id="show racket button"><button onclick="showRacket()" name="show racket button" type="button">Show Racket Questions</button></div>
 		<div id="hide racket button"><button onclick="hideRacket()" name="hide racket button" type="button">Hide Racket Questions</button></div>
 		<div id="Racket Questions">
@@ -215,12 +219,14 @@
 
 			<br>
 		</div>
+	</div>
 
 		<!--Image from https://www.youtube.com/watch?v=6Ns4hfVOJ6Y under Creative Commons Attribution license (reuse allowed)-->
 		<div id="winner image" style.display="none">
 			<br>
 			<img src="assets/winner.jpg" alt="chicken dinner sold seperately" style="width:1281px;height:720px;"></div>
 
+		</div>
 	</body>
 
 	<script>

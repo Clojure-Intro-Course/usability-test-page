@@ -1,0 +1,22 @@
+#page {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#questions {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-image: url(assets/Clojure-icon.png);
+}
+/* Image from https://commons.wikimedia.org/wiki/File:Clojure-icon.png and is in the public domain */
