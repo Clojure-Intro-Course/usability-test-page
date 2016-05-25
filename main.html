@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<meta charset="utf-8">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/main.css">
@@ -11,12 +12,13 @@
 </head>
 
 <body>
+
 	<div id="centerpanel">
 		<br>
 		<div id="page">
 			<input type="text" name="seed value field" id="seed" value="Uninitalized Seed">
 			<button onclick="seedSubmit(seed)" name="seed submit button" type="button">Set Seed</button>
-			<button onclick="determineHideElems()" name="testing button" type="button">Begin Test</button>
+			<button onclick="determineHideElems()" name="testing button" type="button">Click to Begin</button>
 			<p id="currentSeed">Uninitalized Seed</p>
 			<h1>Welcome!</h1>
 			<hr>
@@ -118,15 +120,24 @@
 					</div>
 					<br>
 
-					<div id="move on to clojure button" show.display="none"><button onclick="showClojure();hideRacket()" name="move on to clojure button" type="button">Click here to move on to Clojure Questions</button></div>
+					<div id="move on to clojure button" show.display="none">
+						<button onclick="showClojure();hideRacket()" name="move on to clojure button" type="button">
+							Click here to move on to Clojure Questions
+						</button>
+					</div>
 
 				</div>
 				<br>
-				<div id="show clojure button"><button onclick="showClojure()" name="show clojure button" type="button">Show Clojure Questions</button></div>
-				<div id="hide clojure button"><button onclick="hideClojure()" name="hide clojure button" type="button">Hide Clojure Questions</button></div>
+				<div id="show clojure button"><button onclick="showClojure()" name="show clojure button" type="button">
+					Show Clojure Questions</button>
+				</div>
+				<div id="hide clojure button"><button onclick="hideClojure()" name="hide clojure button" type="button">
+					Hide Clojure Questions</button>
+				</div>
 				<div id="Clojure Questions">
 					<br>
-					<a href="https://github.com/Clojure-Intro-Course/UsabilityStudy/blob/master/Clojure.md" target="_blank">Clojure Introduction</a>
+					<a href="https://github.com/Clojure-Intro-Course/UsabilityStudy/blob/master/Clojure.md" target="_blank">
+						Clojure Introduction</a>
 					<h2>Clojure Questions</h2>
 
 					<!--Clojure Question 0-1 -->
@@ -216,7 +227,9 @@
 					<br>
 
 					<div id="finished button" show.display="none">
-						<button onclick="hideClojure();hideRacket();showWinnerImage()" name="finished button" type="button">Click here when finished with Clojure Questions</button>
+						<button onclick="hideClojure();hideRacket();showWinnerImage()" name="finished button" type="button">
+							Click here when finished with Clojure Questions
+						</button>
 					</div>
 
 					<br>
@@ -227,11 +240,13 @@
 			<div id="winner image" style.display="none">
 				<br>
 				<img src="assets/winner.jpg" alt="chicken dinner sold seperately">
-			</div>
 
 			</div>
+
 		</div>
-	</body>
 
+	</div>
+
+</body>
 
 </html>
