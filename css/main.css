@@ -15,6 +15,7 @@
 
 h1 {
   text-align: center;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #questions {
@@ -36,4 +37,17 @@ img {
 p {
   font-size: 13pt;
   font-style: normal;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+button {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+a {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+input {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
