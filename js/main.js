@@ -24,7 +24,7 @@ function seedSubmit() {
   currentSeed=seed.value
   rng = new Math.seedrandom(seed.value);
   console.log(rng());
-  document.getElementById('currentSeed').innerHTML = currentSeed;
+  document.getElementById('currentSeed').innerHTML = "Current Seed: " + currentSeed;
   console.log("Current Seed: " + currentSeed);
 }
 

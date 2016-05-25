@@ -26,11 +26,14 @@ h1 {
 body {
   background-image: url("Clojure-icon.png");
 }
-/* Image from https://commons.wikimedia.org/wiki/File:Clojure-icon.png and is in the public domain */
+/* Image is from https://commons.wikimedia.org/wiki/File:Clojure-icon.png
+and is in the public domain */
 
 img {
   width: 100%;
 }
 
 p {
+  font-size: 13pt;
+  font-style: normal;
 }
