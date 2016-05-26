@@ -20,12 +20,19 @@ window.onload = function(){
   hideFinished();
 }
 
+function isOdd(num) {
+  if (Math.sign(num) == -1) {
+    num = num*-1
+  }
+  return num % 2;
+}
+
 function seedSubmit() {
   currentSeed=seed.value
   rng = new Math.seedrandom(seed.value);
   console.log(rng());
-  document.getElementById('currentSeed').innerHTML = "Current Seed: " + currentSeed;
-  console.log("Current Seed: " + currentSeed);
+  document.getElementById('currentSeed').innerHTML = "Current Seed: " + currentSeed + " " + isOdd(currentSeed);
+  console.log("Current Seed: " + currentSeed + " " + isOdd(currentSeed));
 }
 
 function determineHideElems() {
