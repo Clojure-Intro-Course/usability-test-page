@@ -1,10 +1,12 @@
 //WELCOME TO THE JUNGLE
 
+//Arrays used by functions when determining language
 level0Qs = ["0-1", "0-2", "0-3", "0-4"];
 level1Qs = ["1-1", "1-2", "1-3", "1-4"];
 level2Qs = ["2-1", "2-2", "2-3", "2-4"];
 level3Qs = ["3-1", "3-2", "3-3", "3-4"];
 
+//All funtions in here run on page load
 window.onload = function(){
   // Sets Math.random to an ARC4-based PRNG that is autoseeded using the
   // current time, dom state, and other accumulated local entropy.
@@ -20,14 +22,18 @@ window.onload = function(){
   hideFinished();
 }
 
+//Logs seed data in console and posts seed on web page with error message type
 function seedSubmit() {
   currentSeed=seed.value
   rng = new Math.seedrandom(seed.value);
   console.log(rng());
-  document.getElementById('currentSeed').innerHTML = "Current Seed: " + currentSeed + "  -  " + generateErrorMsgType();
+  //Generates string for use in html on second line of page
+  document.getElementById('currentSeed').innerHTML = "Current Seed: "
+    + currentSeed + "  -  " + generateErrorMsgType();
   console.log("Current Seed: " + currentSeed);
 }
 
+//Adds all digits of the next rng value and calls helper fn on the sum
 function generateErrorMsgType() {
   var sum = 0;
   var value = rng();
@@ -39,6 +45,7 @@ function generateErrorMsgType() {
   return chooseMessage(sum);
 }
 
+//Returns error message message based on whether a number is even/odd
 function chooseMessage(num) {
   if ((num % 2) == 1){
     return "Standard Error Messages"
@@ -48,6 +55,8 @@ function chooseMessage(num) {
   }
 }
 
+//Determines which questions to hide, logs them,
+//and maps the hiding fn to the arrays of questions
 function determineHideElems() {
   console.log("Hello, cupcake!");
   window.alert(parseInt(currentSeed));
@@ -66,6 +75,7 @@ function determineHideElems() {
   hideClojure();
 }
 
+//Takes an array and shuffles the order of the elements
 function shuffle(arr) {
   var currentIndex = arr.length, temporaryValue, randomIndex;
   while (0 !== currentIndex) {
@@ -78,6 +88,7 @@ function shuffle(arr) {
   return arr;
 }
 
+//Takes shuffled array and alternates languages and logs result
 function alternateLanguages(arr) {
   for (i = 0; i < arr.length; i++) {
     //console.log(arr[i]);
@@ -91,66 +102,74 @@ function alternateLanguages(arr) {
   }
 }
 
+//Takes elements to hide and changes div style.display to "none"
 function hideById(ele) {
-  console.log(ele);
+  //console.log(ele);
   document.getElementById(ele).style.display = "none";
   showRacket();
 }
 
-
+//shows winner image when called
 function showWinnerImage() {
   document.getElementById("winner image").style.display = "inline";
   console.log("game over, man. game over.")
 }
 
+//hides winner image when called
 function hideWinnerImage() {
   document.getElementById("winner image").style.display = "none";
+  console.log("game on")
 }
 
-
+//shows all racket divs
 function showRacket() {
   document.getElementById("Racket Questions").style.display = "block";
   document.getElementById("hide racket button").style.display = "block";
   document.getElementById("show racket button").style.display = "none";
 }
 
+//hides all racket divs
 function hideRacket() {
   document.getElementById("Racket Questions").style.display = "none";
   document.getElementById("show racket button").style.display = "block";
   document.getElementById("hide racket button").style.display = "none";
 }
 
+//shows all clojure divs
 function showClojure() {
   document.getElementById("Clojure Questions").style.display = "block";
   document.getElementById("hide clojure button").style.display = "block";
   document.getElementById("show clojure button").style.display = "none";
 }
 
+//hides all clojure divs
 function hideClojure() {
   document.getElementById("Clojure Questions").style.display = "none";
   document.getElementById("show clojure button").style.display = "block";
   document.getElementById("hide clojure button").style.display = "none";
 }
 
-
+//hides move on the clojure button (on page load)
 function hideMoveOnToClojure() {
   document.getElementById("move on to clojure button").style.display = "none";
 }
 
+//shows move on the clojure button
 function showMoveOnToClojure() {
   document.getElementById("move on to clojure button").style.display = "block";
 }
 
-
+//hides finished button (on page load)
 function hideFinished() {
   document.getElementById("finished button").style.display = "none";
 }
 
+//shows finished button
 function showFinished() {
   document.getElementById("finished button").style.display = "block";
 }
 
-
+//overly complicated method of using checkboxes to hide/show elements
 var racket0Counter = 0;
 var racket0_1Counter = 0;
 var racket0_2Counter = 0;
@@ -177,7 +196,8 @@ var racket3_4Counter = 0;
 
 var racketCounter = 0;
 
-
+//updates racket counter if counter 1-4 are changed
+//shows button if all 8 checkboxes are clicked
 function updateRacketCounter() {
   racketCounter = racket0Counter +
   racket1Counter +
