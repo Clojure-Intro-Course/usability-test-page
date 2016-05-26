@@ -20,19 +20,32 @@ window.onload = function(){
   hideFinished();
 }
 
-function isOdd(num) {
-  if (Math.sign(num) == -1) {
-    num = num*-1
-  }
-  return num % 2;
-}
-
 function seedSubmit() {
   currentSeed=seed.value
   rng = new Math.seedrandom(seed.value);
   console.log(rng());
-  document.getElementById('currentSeed').innerHTML = "Current Seed: " + currentSeed + " " + isOdd(currentSeed);
-  console.log("Current Seed: " + currentSeed + " " + isOdd(currentSeed));
+  document.getElementById('currentSeed').innerHTML = "Current Seed: " + currentSeed + "  -  " + generateErrorMsgType();
+  console.log("Current Seed: " + currentSeed);
+}
+
+function generateErrorMsgType() {
+  var sum = 0;
+  var value = rng();
+  value = value * 10000000000000000
+  while(value > 0) {
+    sum += value%10;
+    value = Math.floor(value/10);
+  }
+  return chooseMessage(sum);
+}
+
+function chooseMessage(num) {
+  if ((num % 2) == 1){
+    return "Standard Error Messages"
+  }
+  else{
+    return "Modified Error Messages"
+  }
 }
 
 function determineHideElems() {
