@@ -35,14 +35,11 @@ function seedSubmit() {
 
 //Adds all digits of the next rng value and calls helper fn on the sum
 function generateErrorMsgType() {
-  var sum = 0;
   var value = rng();
-  value = value * 10000000000000000
-  while(value > 0) {
-    sum += value%10;
-    value = Math.floor(value/10);
-  }
-  return chooseMessage(sum);
+  numStr = value.toString();
+  lastChar = numStr.slice(-1);
+  lastNum = Number(lastChar);
+  return chooseMessage(lastChar);
 }
 
 //Returns error message message based on whether a number is even/odd
