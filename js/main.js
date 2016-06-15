@@ -191,7 +191,11 @@ function clearCheckboxes() {
   document.getElementById("0-1 Clojure check").checked = false;
   document.getElementById("0-2 Clojure check").checked = false;
   document.getElementById("0-3 Clojure check").checked = false;
-  document.getElementById("0-4 Clojure check").checked = false;Clojure
+  document.getElementById("0-4 Clojure check").checked = false;
+
+  document.getElementById("1-1 Clojure check").checked = false;
+  document.getElementById("1-2 Clojure check").checked = false;
+  document.getElementById("1-3 Clojure check").checked = false;
   document.getElementById("1-4 Clojure check").checked = false;
 
   document.getElementById("2-1 Clojure check").checked = false;
