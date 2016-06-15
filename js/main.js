@@ -166,6 +166,45 @@ function showFinished() {
   document.getElementById("finished button").style.display = "block";
 }
 
+//clears checkboxes
+function clearCheckboxes() {
+  document.getElementById("0-1 Racket check").checked = false;
+  document.getElementById("0-2 Racket check").checked = false;
+  document.getElementById("0-3 Racket check").checked = false;
+  document.getElementById("0-4 Racket check").checked = false;
+
+  document.getElementById("1-1 Racket check").checked = false;
+  document.getElementById("1-2 Racket check").checked = false;
+  document.getElementById("1-3 Racket check").checked = false;
+  document.getElementById("1-4 Racket check").checked = false;
+
+  document.getElementById("2-1 Racket check").checked = false;
+  document.getElementById("2-2 Racket check").checked = false;
+  document.getElementById("2-3 Racket check").checked = false;
+  document.getElementById("2-4 Racket check").checked = false;
+
+  document.getElementById("3-1 Racket check").checked = false;
+  document.getElementById("3-2 Racket check").checked = false;
+  document.getElementById("3-3 Racket check").checked = false;
+  document.getElementById("3-4 Racket check").checked = false;
+
+  document.getElementById("0-1 Clojure check").checked = false;
+  document.getElementById("0-2 Clojure check").checked = false;
+  document.getElementById("0-3 Clojure check").checked = false;
+  document.getElementById("0-4 Clojure check").checked = false;Clojure
+  document.getElementById("1-4 Clojure check").checked = false;
+
+  document.getElementById("2-1 Clojure check").checked = false;
+  document.getElementById("2-2 Clojure check").checked = false;
+  document.getElementById("2-3 Clojure check").checked = false;
+  document.getElementById("2-4 Clojure check").checked = false;
+
+  document.getElementById("3-1 Clojure check").checked = false;
+  document.getElementById("3-2 Clojure check").checked = false;
+  document.getElementById("3-3 Clojure check").checked = false;
+  document.getElementById("3-4 Clojure check").checked = false;
+}
+
 //overly complicated method of using checkboxes to hide/show elements
 var racket0Counter = 0;
 var racket0_1Counter = 0;
